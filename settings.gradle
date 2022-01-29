@@ -1,0 +1,11 @@
+rootProject.name = 'rial'
+
+include ':shared'
+project(':shared').projectDir = file('src/shared')
+
+include ':backoffice'
+project(':backoffice').projectDir = file('src/backoffice')
+
+include ':backend'
+project(':backend').projectDir = file('src/backend')
+
