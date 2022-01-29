@@ -4,16 +4,14 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class UuidValueObject {
-    private final UUID value;
+    private final String value;
 
     public UuidValueObject(String value) {
-        this.value = UUID.fromString(value);
+        ensureValidUuid(value);
+        this.value = value;
     }
 
-    public UUID value() { return value; }
-
-    @Override
-    public String toString() { return this.value.toString(); }
+    public String value() { return value; }
 
     @Override
     public boolean equals(Object o) {
@@ -32,4 +30,7 @@ public class UuidValueObject {
         return Objects.hash(value);
     }
 
+    private void ensureValidUuid(String value) throws IllegalArgumentException {
+        UUID.fromString(value);
+    }
 }
