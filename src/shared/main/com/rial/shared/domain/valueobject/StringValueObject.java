@@ -1,4 +1,4 @@
-package com.rial.shared.domain.criteria.valueobject;
+package com.rial.shared.domain.valueobject;
 
 import java.util.Objects;
 
