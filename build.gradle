@@ -1,5 +1,3 @@
-
-
 // Main project (located in apps/)
 buildscript {
 	repositories {
@@ -119,9 +117,10 @@ bootJar {
 	version('0.0.1')
 }
 
-//mainClassName('com.rial.apps.Starter')
+mainClassName = 'com.rial.apps.Starter'
 
 dependencies {
+
 	implementation('org.springframework.boot:spring-boot-starter-web')
 
 	implementation project(":shared")
