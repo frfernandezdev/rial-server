@@ -3,10 +3,7 @@ package com.rial.apps;
 import com.rial.apps.backend.BackendApplication;
 import com.rial.apps.backoffice.BackofficeApplication;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.WebApplicationType;
-import org.springframework.context.ConfigurableApplicationContext;
 
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class Starter {
