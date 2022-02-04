@@ -1,2 +1,2 @@
-# rial-server
-Rial Server
+# Rial Server
+
